@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "semi": 0,
+    "@typescript-eslint/semi": 0,
+    "@typescript-eslint/no-unused-vars": 1,
+    "@typescript-eslint/naming-convention": 0,
+    "react/react-in-jsx-scope": 0,
+    "indent": [1, 2],
+    "@typescript-eslint/indent": [1, 2],
+    "linebreak-style": 0,
+    "react/jsx-wrap-multilines": 0
+  }
+}
