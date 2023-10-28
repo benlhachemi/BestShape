@@ -3,7 +3,7 @@ export default function AboutPage() {
     <div className="px-6 lg:w-5/6 xl:w-4/6 py-10 mx-auto">
       <div className="space-y-12 text-md md:text-lg text-gray-500 pb-4 md:pb-8">
         <p>
-          Introducing BestShape, the ultimateUltimate Fitness Companion 💪
+          Introducing BestShape, the Ultimate Fitness Companion 💪
         </p>
         <div className="space-y-2">
           <h2 className="text-xl md:text-2xl font-medium text-gray-700">
