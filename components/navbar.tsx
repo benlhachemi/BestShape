@@ -1,7 +1,6 @@
 'use client';
 
 // imports
-import Image from 'next/image';
 import Link from 'next/link';
 import {
   NavigationMenu,
@@ -16,7 +15,13 @@ export default function Navbar({ className }: { className: string }) {
       {/* LOGO */}
       <div className="w-36 md:w-40 xl:w-60">
         <Link href="/">
-          <Image alt="logo" width={200} height={200} src="/images/logo.svg" />
+          <div className="w-36 md:w-40 xl:w-60 flex justify-end">
+            <Link href="/start">
+              <Button size="lg" className="rounded-3xl">
+                Trajneri
+              </Button>
+            </Link>
+          </div>
         </Link>
       </div>
 
