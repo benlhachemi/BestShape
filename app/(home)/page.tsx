@@ -20,7 +20,7 @@ export default function Home() {
 
         <p className="text-lg text-neutral-400 lg:px-24 mx-auto">
           Nëse synoni të ndërtoni forcë, të humbni peshë ose të përmirësoni 
-          mirëqenien tuaj të përgjithshme, aplikacioni ynë do t'ju ndihmojë 
+          mirëqenien tuaj të përgjithshme, aplikacioni ynë do t&apos;ju ndihmojë 
           të arrini qëllimet tuaja me lehtësi.
         </p>
 
