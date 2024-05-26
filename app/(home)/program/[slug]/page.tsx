@@ -104,7 +104,7 @@ export default async function ProgramPage({
       <div className="flex flex-col gap-20">
         {/* Header - General overview */}
         <div className="flex flex-col gap-3">
-          <h2 className="font-bold text-3xl lg:text-4xl flex-shrink-0">Pasqyrë e përgjithshme</h2>
+          <h2 className="font-bold text-3xl lg:text-4xl flex-shrink-0">Përmbledhje e përgjithshme</h2>
           <span className="text-neutral-400 text-sm font-normal">
              Një përmbledhje e përgjithshme mbi planin e fitnesit dhe shëndetin aktual
           </span>
@@ -294,7 +294,7 @@ export default async function ProgramPage({
               <CardContent className="flex flex-col gap-2">
                 <div className="text-lg font-semibold text-sky-400 flex items-center gap-2">
                   <FaInfoCircle />
-                  Note
+                  Shënim
                 </div>
                 <p>
                 Rezultati i shëndetit të strukturës së trupit tënd aktual 
@@ -388,7 +388,7 @@ export default async function ProgramPage({
 
         {/* summary */}
         <div className="flex flex-col gap-3">
-          <h3 className="text-xl font-semibold">Summary</h3>
+          <h3 className="text-xl font-semibold">Përmbledhje</h3>
           <p>
            Si perfundim, qëllimi juaj është të
             {data.overview.weight > ideal_weight
@@ -429,9 +429,9 @@ export default async function ProgramPage({
       <div className="flex flex-col gap-20">
         {/* Header */}
         <div className="flex flex-col gap-3">
-          <h2 className="font-bold text-4xl flex-shrink-0">Diet Plan</h2>
+          <h2 className="font-bold text-4xl flex-shrink-0">Plani i dietës</h2>
           <span className="text-neutral-400 text-sm font-normal">
-            Plani javor i ushqimit tuaj: një rrugëtim ushqimor.
+            Plani javor i ushqimit tuaj
           </span>
         </div>
 
@@ -446,9 +446,9 @@ export default async function ProgramPage({
             Kaloritë
           </div>
           <p>
-            {ideal_weight < data.overview.weight && `Në mënyrë që të humbni 0.5 kg në javë, duhet të konsumoni ${calory_data.lose_05} kalori në ditë..`}
-            {ideal_weight > data.overview.weight && `Në mënyrë që të fitoni 0.5 kg në javë, duhet të konsumoni ${calory_data.gain_05} kalori në ditë..`}
-            {ideal_weight === data.overview.weight && `Në mënyrë që të mbani peshën tuaj aktuale, duhet të konsumoni ${calory_data.calories} calories a day.`}
+            {ideal_weight < data.overview.weight && `Në mënyrë që të humbni 0.5 kg në javë, duhet të konsumoni ${calory_data.lose_05} kalori në ditë.`}
+            {ideal_weight > data.overview.weight && `Në mënyrë që të fitoni 0.5 kg në javë, duhet të konsumoni ${calory_data.gain_05} kalori në ditë.`}
+            {ideal_weight === data.overview.weight && `Në mënyrë që të mbani peshën tuaj aktuale, duhet të konsumoni ${calory_data.calories} kalori në ditë.`}
           </p>
 
           {/* chart v2 */}
@@ -627,7 +627,7 @@ export default async function ProgramPage({
             </p>
             <div className="flex flex-col gap-1">
               <div className="font-semibold">Burimet:</div>
-              <ul className="list-disc">
+              <ul className="list-disc list-inside">
                 <li>Mish</li>
                 <li>Ve</li>
                 <li>Peshk</li>
@@ -662,7 +662,7 @@ export default async function ProgramPage({
             </p>
             <div className="flex flex-col gap-1">
               <div className="font-semibold">Burimet:</div>
-              <ul className="list-disc">
+              <ul className="list-disc list-inside">
                 <li>Oriz (e.g., oriz i bardhë, oriz i kaftë)</li>
                 <li>Pasta (e.g., shpageta, makarona)</li>
                 <li>Buke (e.g., bukë e zezë, baguette)</li>
@@ -697,7 +697,7 @@ export default async function ProgramPage({
             </p>
             <div className="flex flex-col gap-1">
               <div className="font-semibold">Burimet:</div>
-              <ul className="list-disc">
+              <ul className="list-disc list-inside">
                 <li>Avokado</li>
                 <li>Vaj ulliri</li>
                 <li>Vaj kokosi</li>

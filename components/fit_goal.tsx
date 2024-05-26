@@ -115,7 +115,7 @@ export default function FitGoal({
         <Picker
           max={7}
           min={2}
-          tag="Days per week"
+          tag="Ditë në javë"
           value={answers.workout_days}
           onAdd={() => setAnswers({ ...answers, workout_days: answers.workout_days + 1 })}
           onRemove={() => {

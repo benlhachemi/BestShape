@@ -36,7 +36,7 @@ export default function Navbar({ className }: { className: string }) {
                 className="text-lg font-semibold rounded-xl hover:bg-neutral-100"
                 size="lg"
               >
-                Home
+                Kryefaqja
               </Button>
             </Link>
           </NavigationMenuItem>
@@ -49,7 +49,7 @@ export default function Navbar({ className }: { className: string }) {
                 className="text-lg font-semibold rounded-xl hover:bg-neutral-100"
                 size="lg"
               >
-                About
+                Më shumë
               </Button>
             </Link>
           </NavigationMenuItem>
@@ -60,7 +60,7 @@ export default function Navbar({ className }: { className: string }) {
       <div className="w-36 md:w-40 xl:w-60 flex justify-end">
         <Link href="/start">
           <Button size="lg" className="rounded-3xl">
-            Get started
+            Fillo tani
           </Button>
         </Link>
       </div>
