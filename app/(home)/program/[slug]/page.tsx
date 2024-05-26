@@ -104,9 +104,9 @@ export default async function ProgramPage({
       <div className="flex flex-col gap-20">
         {/* Header - General overview */}
         <div className="flex flex-col gap-3">
-          <h2 className="font-bold text-3xl lg:text-4xl flex-shrink-0">General Overview</h2>
+          <h2 className="font-bold text-3xl lg:text-4xl flex-shrink-0">Pasqyrë e përgjithshme</h2>
           <span className="text-neutral-400 text-sm font-normal">
-            A general overview on the fitness plan and current health
+             Një përmbledhje e përgjithshme mbi planin e fitnesit dhe shëndetin aktual
           </span>
         </div>
 
@@ -114,34 +114,34 @@ export default async function ProgramPage({
         <div className="flex flex-col lg:flex-row items-center w-full h-full justify-between gap-10">
           {/* weight */}
           <div className="flex flex-col gap-5 w-full h-full">
-            <h3 className="text-xl font-semibold">Weight Assessment</h3>
+            <h3 className="text-xl font-semibold">Vlerësimi i peshës</h3>
             <div>
-              Your current weight (
+             Pesha juaj aktuale (
               {data.overview?.weight}
               {' '}
-              Kg) is considered
+              Kg) konsiderohet
               {status === 'healthy' && (
                 <span className="font-semibold text-xl text-green-400">
                   {' '}
-                  Healthy
+                  E shëndetshme
                 </span>
               )}
               {status === 'underweight' && (
                 <span className="font-semibold text-xl text-yellow-400">
                   {' '}
-                  Under Weight
+                  Nën peshë
                 </span>
               )}
               {status === 'overweight' && (
                 <span className="font-semibold text-xl text-yellow-400">
                   {' '}
-                  Over Weight
+                  Mbi peshë
                 </span>
               )}
               {status === 'obese' && (
                 <span className="font-semibold text-xl text-orange-400">
                   {' '}
-                  Obese
+                  Mbi peshë e tepruar
                 </span>
               )}
             </div>
@@ -150,7 +150,7 @@ export default async function ProgramPage({
             <div className="w-full flex flex-col gap-0 mb-10">
               <div className="w-full h-8 rounded-md shadow-md flex gap-0 text-neutral-50 font-semibold text-xs">
                 <div className="rounded-l-md flex items-center w-[18%] bg-yellow-400 h-full">
-                  <span className="text-center mx-auto">Underweight</span>
+                  <span className="text-center mx-auto">Nën peshë</span>
                 </div>
 
                 <div className="w-[4%] relative h-full bg-gradient-to-r from-yellow-400 to-green-400">
@@ -163,7 +163,7 @@ export default async function ProgramPage({
                 </div>
 
                 <div className="flex items-center w-[38%] bg-green-400 h-full">
-                  <span className="text-center mx-auto">Healthy</span>
+                  <span className="text-center mx-auto">Shëndetshëm</span>
                 </div>
 
                 <div className="w-[4%] h-full bg-gradient-to-r from-green-400 to-yellow-400 relative">
@@ -176,7 +176,7 @@ export default async function ProgramPage({
                 </div>
 
                 <div className="flex items-center w-[20%] bg-yellow-400 h-full">
-                  <span className="text-center mx-auto">Overweight</span>
+                  <span className="text-center mx-auto">Mbi peshë</span>
                 </div>
 
                 <div className="w-[4%] h-full bg-gradient-to-r from-yellow-400 to-orange-400 relative">
@@ -189,7 +189,7 @@ export default async function ProgramPage({
                 </div>
 
                 <div className="flex rounded-r-md items-center w-[20%] bg-orange-400 h-full">
-                  <span className="text-center mx-auto">Obese</span>
+                  <span className="text-center mx-auto">Mbi peshë e tepruar</span>
                 </div>
               </div>
             </div>
@@ -198,10 +198,10 @@ export default async function ProgramPage({
               <CardContent className="flex flex-col gap-2">
                 <div className="text-lg font-semibold text-sky-400 flex items-center gap-2">
                   <FaInfoCircle />
-                  Note
+                  Shënim
                 </div>
                 <p className="flex flex-wrap gap-1">
-                  This result was calculated based on your
+                  Ky rezultat është llogaritur bazuar në 
                   <Sheet>
                     <SheetTrigger className="flex gap-1 items-center text-sm text-sky-400 hover:underline underline-offset-4">
                       BMI.
@@ -212,14 +212,14 @@ export default async function ProgramPage({
                           Body Mass Index (BMI)
                         </div>
                         <div>
-                          bmi = weight
+                          bmi = pesha
                           <span className="text-sm text-neutral-400">
                             {' '}
-                            (in kg)
+                            (në kg)
                             {' '}
                           </span>
                           {' '}
-                          / height ^ 2
+                          / gjatësia ^ 2
                           {' '}
                         </div>
                         <div>
@@ -239,9 +239,9 @@ export default async function ProgramPage({
                       </div>
                     </SheetContent>
                   </Sheet>
-                  The BMI offers insight into your weight status but overlooks
-                  factors like muscle mass and body composition. Two people with
-                  the same BMI may have differing health profiles.
+                  BMI ofron informacion mbi gjendjen tuaj të peshës,
+                  por injoron faktorë si masa muskulore dhe kompozicioni i trupit. 
+                  Dy persona me të njëjtin BMI mund të kenë profile të ndryshme shëndetësore.
                 </p>
               </CardContent>
             </Card>
@@ -251,18 +251,18 @@ export default async function ProgramPage({
 
           {/* composition */}
           <div className="flex flex-col gap-5 w-full h-full">
-            <h3 className="text-xl font-semibold">Body Composition Analysis</h3>
+            <h3 className="text-xl font-semibold">Analiza e strukturës së trupit</h3>
             <div className="flex items-center gap-2">
-              Your current body composition (
+            Struktura aktuale e trupit tënd (
               {composition.fat_percentage}
-              %) is considered
+              %) konsiderohet
               {composition.is_healthy ? (
                 <span className="font-semibold text-xl text-green-400">
-                  Healthy
+                  E shëndetshme
                 </span>
               ) : (
                 <span className="font-semibold text-xl text-yellow-400">
-                  OverFat
+                  Përmbipeshë
                 </span>
               )}
             </div>
@@ -271,7 +271,7 @@ export default async function ProgramPage({
             <div className="w-full flex flex-col gap-0 mb-10">
               <div className="w-full h-8 rounded-md shadow-md flex gap-0 text-neutral-50 font-semibold text-xs">
                 <div className="flex rounded-l-md items-center w-[48%] bg-green-400 h-full">
-                  <span className="text-center mx-auto">Healthy</span>
+                  <span className="text-center mx-auto">E shëndetshme</span>
                 </div>
 
                 <div className="w-[4%] h-full bg-gradient-to-r from-green-400 to-yellow-400 relative">
@@ -285,7 +285,7 @@ export default async function ProgramPage({
                 </div>
 
                 <div className="flex rounded-r-md items-center w-[48%] bg-yellow-400 h-full">
-                  <span className="text-center mx-auto">Overfat</span>
+                  <span className="text-center mx-auto">Përmbipeshë</span>
                 </div>
               </div>
             </div>
@@ -297,10 +297,10 @@ export default async function ProgramPage({
                   Note
                 </div>
                 <p>
-                  Your current body composition health result has been
-                  calculated taking into account your gender and age. This
-                  personalized approach helps provide a more accurate assessment
-                  of your specific health status
+                Rezultati i shëndetit të strukturës së trupit tënd aktual 
+                është llogaritur duke marrë parasysh gjininë dhe moshën tënde. 
+                Kjo qasje e personalizuar ndihmon në sigurimin e një vlerësimi 
+                më të saktë të gjendjes së shëndetit tënd specifik.
                 </p>
               </CardContent>
             </Card>
@@ -312,7 +312,7 @@ export default async function ProgramPage({
           {/* weight target */}
           <div className="flex flex-col gap-5 w-full h-full">
             <h3 className="text-xl font-semibold">
-              Target Weight Recommendation
+              Rekomandimi për peshën që synohet
             </h3>
             <div className="text-3xl font-semibold text-emerald-500">
               {ideal_weight}
@@ -322,15 +322,15 @@ export default async function ProgramPage({
 
             {ideal_weight === data.overview.weight && data.overview.fitness_goal !== 'build_muscle' && (
               <p>
-                Based D. R. Miller Formula, your current weight is considered perfect,
-                make sure to maitain this weight.
+                Bazuar në formulën e D.R. Miller, pesha juaj aktuale konsiderohet e përsosur. 
+                Sigurohuni që të mbani këtë peshë.
               </p>
             )}
 
             {ideal_weight !== data.overview.weight && data.overview.fitness_goal !== 'build_muscle' && (
               <p>
-                Based D. R. Miller Formula and your fitness goal, the ideal
-                weight that you can achieve is
+                Bazuar në formulën e D.R. Miller dhe qëllimin tuaj për fitnes, 
+                pesha ideale që mund të arrini është
                 {' '}
                 {ideal_weight}
                 {' '}
@@ -340,13 +340,13 @@ export default async function ProgramPage({
 
             {data.overview.fitness_goal === 'build_muscle' && (
               <p>
-                Since your fitness goal is to build muscles, you need to aim for
+                Duke qenë që qëllimi juaj i fitnesit është të ndërtoni muskuj, duhet të synoni për
                 {' '}
                 {ideal_weight}
                 {' '}
-                Kg to look muscular. Keep in mind that weight
-                only is not sufficient, the body fat percentage is also an
-                important factor.
+                Kg për të dukur muskuloz. Kini parasysh që vetëm pesha 
+                nuk është e mjaftueshme, përqindja e yndyrës në trup 
+                është gjithashtu një faktor i rëndësishëm.
               </p>
             )}
           </div>
@@ -356,7 +356,7 @@ export default async function ProgramPage({
           {/* composition target */}
           <div className="flex flex-col gap-5 w-full h-full">
             <h3 className="text-xl font-semibold">
-              Body Composition Recommendation
+              Rekomandimi për strukturën e trupit
             </h3>
             <div className="text-3xl font-semibold text-emerald-500">
               {composition.ideal_fat <= composition.fat_percentage
@@ -366,15 +366,16 @@ export default async function ProgramPage({
             </div>
             {composition.ideal_fat >= composition.fat_percentage ? (
               <p>
-                You&apos;r current body fat percentage is already considered
-                perfect, so our job is to make sure that you keep this body
-                composition.
+                Përqindja aktuale e yndyrës në trupin tuaj 
+                konsiderohet tashmë perfekte, kështu që detyra 
+                jonë është të sigurojmë që të mbani këtë strukturë trupore.
               </p>
             ) : (
               <p>
-                Based on Jackson & Pollock Ideal Body Fat Percentages and your
-                fitness goal, the perfect body composition that you can work on
-                is
+                Bazuar në përqindjet e ideale të yndyrës së trupit 
+                sipas Jackson & Pollock dhe qëllimin tuaj për fitnes, 
+                kompozicioni i trupit perfekt me të cilin mund të punoni 
+                është
                 {' '}
                 {composition.ideal_fat}
                 %.
@@ -389,26 +390,26 @@ export default async function ProgramPage({
         <div className="flex flex-col gap-3">
           <h3 className="text-xl font-semibold">Summary</h3>
           <p>
-            As a summary, your goal is to
+           Si perfundim, qëllimi juaj është të
             {data.overview.weight > ideal_weight
-              && ` lose ${
+              && ` humbni ${
                 data.overview.weight - ideal_weight
-              } Kg to reach the ideal weight suggested (${ideal_weight} kg), `}
+              } Kg për të arritur peshën ideale e sugjeruar (${ideal_weight} kg), `}
             {data.overview.weight < ideal_weight
-              && ` gain ${
+              && ` te shtoni ${
                 ideal_weight - data.overview.weight
-              } Kg to reach the ideal weight suggested (${ideal_weight} kg), `}
+              } Kg për të arritur peshën ideale e sugjeruar (${ideal_weight} kg), `}
             {data.overview.weight === ideal_weight
-              && ' maintain your current weight, '}
+              && ' mbani peshën tuaj aktuale, '}
             and for the body composition you should
             {composition.fat_percentage > composition.ideal_fat
-              && ` burn ${
+              && ` djegni ${
                 composition.fat_percentage - composition.ideal_fat
-              } % of body fat to reach the ideal body composition suggested (${
+              } % e yndyrës së trupit për të arritur përbërjen ideale të trupit të sugjeruar (${
                 composition.ideal_fat
               } %).`}
             {composition.fat_percentage <= composition.ideal_fat
-              && ' maintain your current body fat percentage.'}
+              && ' mbani përqindjen aktuale të yndyrës në trup.'}
           </p>
         </div>
       </div>
@@ -430,31 +431,31 @@ export default async function ProgramPage({
         <div className="flex flex-col gap-3">
           <h2 className="font-bold text-4xl flex-shrink-0">Diet Plan</h2>
           <span className="text-neutral-400 text-sm font-normal">
-            Your Weekly Diet Plan: A Nutritional Roadmap
+            Plani javor i ushqimit tuaj: një rrugëtim ushqimor.
           </span>
         </div>
 
         {/* Calories */}
         <div className="flex flex-col gap-5 w-full h-full">
-          <h3 className="text-xl font-semibold">Daily Caloric Requirement</h3>
+          <h3 className="text-xl font-semibold">Kërkesa ditore kalorike</h3>
           <div className="text-3xl font-semibold text-emerald-500">
             {ideal_weight < data.overview.weight && calory_data.lose_05}
             {ideal_weight > data.overview.weight && calory_data.gain_05}
             {ideal_weight === data.overview.weight && calory_data.calories}
             {' '}
-            Calories
+            Kaloritë
           </div>
           <p>
-            {ideal_weight < data.overview.weight && `In order to lose 0.5 Kg per week you need to comsume ${calory_data.lose_05} calories a day.`}
-            {ideal_weight > data.overview.weight && `In order to gain 0.5 Kg per week you need to comsume ${calory_data.gain_05} calories a day.`}
-            {ideal_weight === data.overview.weight && `In order to maitain your current weight, you need to comsume ${calory_data.calories} calories a day.`}
+            {ideal_weight < data.overview.weight && `Në mënyrë që të humbni 0.5 kg në javë, duhet të konsumoni ${calory_data.lose_05} kalori në ditë..`}
+            {ideal_weight > data.overview.weight && `Në mënyrë që të fitoni 0.5 kg në javë, duhet të konsumoni ${calory_data.gain_05} kalori në ditë..`}
+            {ideal_weight === data.overview.weight && `Në mënyrë që të mbani peshën tuaj aktuale, duhet të konsumoni ${calory_data.calories} calories a day.`}
           </p>
 
           {/* chart v2 */}
           <div className="w-full hidden lg:flex flex-col gap-0 mb-10">
             <div className="w-full h-8 rounded-md shadow-md flex gap-0 text-white font-bold text-xs">
               <div className="rounded-l-md flex items-center w-[10%] bg-red-400 h-full">
-                <span className="text-center mx-auto">-1 Kg/week</span>
+                <span className="text-center mx-auto">-1 Kg/javë</span>
               </div>
 
               <div className="w-[5%] relative h-full bg-gradient-to-r from-red-400 to-orange-400">
@@ -463,13 +464,13 @@ export default async function ProgramPage({
                   <div className="text-neutral-400 w-10 text-center mx-auto font-normal">
                     {calory_data.lose_1}
                     {' '}
-                    calories
+                    kaloritë
                   </div>
                 </div>
               </div>
 
               <div className="flex items-center w-[10%] bg-orange-400 h-full">
-                <span className="text-center mx-auto">- 0.5 Kg/week</span>
+                <span className="text-center mx-auto">- 0.5 Kg/javë</span>
               </div>
 
               <div className="w-[5%] h-full bg-gradient-to-r from-orange-400 to-lime-400 relative">
@@ -478,13 +479,13 @@ export default async function ProgramPage({
                   <div className="text-neutral-400 w-10 text-center mx-auto font-normal">
                     {calory_data.lose_05}
                     {' '}
-                    calories
+                    kaloritë
                   </div>
                 </div>
               </div>
 
               <div className="flex items-center w-[10%] bg-lime-400 h-full">
-                <span className="text-center mx-auto">- 0.25 Kg/week</span>
+                <span className="text-center mx-auto">- 0.25 Kg/javë</span>
               </div>
 
               <div className="w-[5%] h-full bg-gradient-to-r from-lime-400 to-green-400 relative">
@@ -493,13 +494,13 @@ export default async function ProgramPage({
                   <div className="text-neutral-400 w-10 text-center mx-auto font-normal">
                     {calory_data.lose_025}
                     {' '}
-                    calories
+                    kaloritë
                   </div>
                 </div>
               </div>
 
               <div className="flex items-center w-[10%] bg-green-400 h-full">
-                <span className="text-center mx-auto">Keep weight</span>
+                <span className="text-center mx-auto">Mbajeni peshën</span>
               </div>
 
               <div className="w-[5%] h-full bg-gradient-to-r from-green-400 to-cyan-400 relative">
@@ -508,13 +509,13 @@ export default async function ProgramPage({
                   <div className="text-neutral-400 w-10 text-center mx-auto font-normal">
                     {calory_data.calories}
                     {' '}
-                    calories
+                    kaloritë
                   </div>
                 </div>
               </div>
 
               <div className="flex items-center w-[10%] bg-cyan-400 h-full">
-                <span className="text-center mx-auto">+ 0.25 Kg/week</span>
+                <span className="text-center mx-auto">+ 0.25 Kg/javë</span>
               </div>
 
               <div className="w-[5%] h-full bg-gradient-to-r from-cyan-400 to-sky-400 relative">
@@ -523,13 +524,13 @@ export default async function ProgramPage({
                   <div className="text-neutral-400 w-10 text-center mx-auto font-normal">
                     {calory_data.gain_025}
                     {' '}
-                    calories
+                    kaloritë
                   </div>
                 </div>
               </div>
 
               <div className="flex items-center w-[10%] bg-sky-400 h-full">
-                <span className="text-center mx-auto">+ 0.5 Kg/week</span>
+                <span className="text-center mx-auto">+ 0.5 Kg/javë</span>
               </div>
 
               <div className="w-[5%] h-full bg-gradient-to-r from-sky-400 to-indigo-400 relative">
@@ -538,13 +539,13 @@ export default async function ProgramPage({
                   <div className="text-neutral-400 w-10 text-center mx-auto font-normal">
                     {calory_data.gain_05}
                     {' '}
-                    calories
+                    kaloritë
                   </div>
                 </div>
               </div>
 
               <div className="flex items-center w-[10%] bg-indigo-400 h-full">
-                <span className="text-center mx-auto">+ 1 Kg/week</span>
+                <span className="text-center mx-auto">+ 1 Kg/javë</span>
               </div>
 
               <div className="w-[5%] h-full bg-gradient-to-r from-indigo-400 to-indigo-400 relative rounded-r-md">
@@ -553,7 +554,7 @@ export default async function ProgramPage({
                   <div className="text-neutral-400 w-10 text-center mx-auto font-normal">
                     {calory_data.gain_1}
                     {' '}
-                    calories
+                    kaloritë
                   </div>
                 </div>
               </div>
@@ -565,42 +566,42 @@ export default async function ProgramPage({
             <TableHeader>
               <TableRow>
                 <TableHead>Kg</TableHead>
-                <TableHead>Calories</TableHead>
+                <TableHead>Kaloritë</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell className="font-medium">-1 Kg/week</TableCell>
+                <TableCell className="font-medium">-1 Kg/javë</TableCell>
                 <TableCell>{calory_data.lose_1}</TableCell>
               </TableRow>
 
               <TableRow>
-                <TableCell className="font-medium">-0.5 Kg/week</TableCell>
+                <TableCell className="font-medium">-0.5 Kg/javë</TableCell>
                 <TableCell>{calory_data.lose_05}</TableCell>
               </TableRow>
 
               <TableRow>
-                <TableCell className="font-medium">-0.25 Kg/week</TableCell>
+                <TableCell className="font-medium">-0.25 Kg/javë</TableCell>
                 <TableCell>{calory_data.lose_025}</TableCell>
               </TableRow>
 
               <TableRow>
-                <TableCell className="font-medium">Maitain weight</TableCell>
+                <TableCell className="font-medium">Mbajeni peshën</TableCell>
                 <TableCell>{calory_data.calories}</TableCell>
               </TableRow>
 
               <TableRow>
-                <TableCell className="font-medium">+0.25 Kg/week</TableCell>
+                <TableCell className="font-medium">+0.25 Kg/javë</TableCell>
                 <TableCell>{calory_data.gain_025}</TableCell>
               </TableRow>
 
               <TableRow>
-                <TableCell className="font-medium">+0.5 Kg/week</TableCell>
+                <TableCell className="font-medium">+0.5 Kg/javë</TableCell>
                 <TableCell>{calory_data.gain_05}</TableCell>
               </TableRow>
 
               <TableRow>
-                <TableCell className="font-medium">+1 Kg/week</TableCell>
+                <TableCell className="font-medium">+1 Kg/javë</TableCell>
                 <TableCell>{calory_data.gain_1}</TableCell>
               </TableRow>
             </TableBody>
@@ -612,11 +613,11 @@ export default async function ProgramPage({
           {/* Protein */}
           <div className="flex flex-col gap-5 w-full h-full">
             <h3 className="text-xl font-semibold">
-              Daily Proteins Requirement
+              Kërkesat ditore për proteina
             </h3>
             <div className="text-3xl font-semibold text-emerald-500">
               {calory_data.protein_1}
-              g to
+              g deri
               {' '}
               {calory_data.protein_2}
               g
@@ -625,21 +626,21 @@ export default async function ProgramPage({
               {data.overview.fitness_goal === 'build_muscle' && 'Since your goal is to build muscles, high protein intake is an important factor to build lean muscle mass'}
             </p>
             <div className="flex flex-col gap-1">
-              <div className="font-semibold">Sources:</div>
+              <div className="font-semibold">Burimet:</div>
               <ul className="list-disc">
-                <li>Meat</li>
-                <li>Eggs</li>
-                <li>Fish</li>
-                <li>Poultry</li>
-                <li>Legumes (e.g., lentils, chickpeas)</li>
-                <li>Nuts (e.g., almonds, peanuts)</li>
-                <li>Seeds (e.g., chia seeds, sunflower seeds)</li>
+                <li>Mish</li>
+                <li>Ve</li>
+                <li>Peshk</li>
+                <li>Shpendët</li>
+                <li>Bishtajoret (e.g., thjerrëzat, qiqrat)</li>
+                <li>Arrat (e.g., bajame, kikirikë)</li>
+                <li>Farat (e.g., farat chia, farë lulediellis)</li>
                 <li>Tofu</li>
-                <li>Quinoa</li>
-                <li>Dairy (e.g., cheese, yogurt)</li>
-                <li>Beans (e.g., black beans, kidney beans)</li>
-                <li>Greek Yogurt</li>
-                <li>Cottage Cheese</li>
+                <li>Kuinoa</li>
+                <li>Produktet e qumështit (e.g., djathi, jogurti)</li>
+                <li>Fasulet (e.g., fasulet e zeza, fasula nyje)</li>
+                <li>Jogurt grek</li>
+                <li>Gjizë</li>
               </ul>
             </div>
           </div>
@@ -647,11 +648,11 @@ export default async function ProgramPage({
           {/* Carbs */}
           <div className="flex flex-col gap-5 w-full h-full">
             <h3 className="text-xl font-semibold">
-              Daily Carbs Requirement
+             Kërkesa ditore për karbohidrate
             </h3>
             <div className="text-3xl font-semibold text-emerald-500">
               {calory_data.carbs_1}
-              g to
+              g deri
               {' '}
               {calory_data.carbs_2}
               g
@@ -660,21 +661,21 @@ export default async function ProgramPage({
               {data.overview.fitness_goal === 'build_muscle' && 'Carbohydrates are a crucial macronutrient for bodybuilders due to their role in providing energy for intense workouts and aiding in muscle recovery'}
             </p>
             <div className="flex flex-col gap-1">
-              <div className="font-semibold">Sources:</div>
+              <div className="font-semibold">Burimet:</div>
               <ul className="list-disc">
-                <li>Rice (e.g., white rice, brown rice)</li>
-                <li>Pasta (e.g., spaghetti, penne)</li>
-                <li>Bread (e.g., whole wheat bread, baguette)</li>
-                <li>Potatoes</li>
-                <li>Quinoa</li>
-                <li>Oats</li>
-                <li>Cereals (e.g., cornflakes, oatmeal)</li>
-                <li>Beans (e.g., black beans, kidney beans)</li>
-                <li>Lentils</li>
-                <li>Sweet Potatoes</li>
-                <li>Barley</li>
-                <li>Millet</li>
-                <li>Fruits (e.g, Bananas, apples)</li>
+                <li>Oriz (e.g., oriz i bardhë, oriz i kaftë)</li>
+                <li>Pasta (e.g., shpageta, makarona)</li>
+                <li>Buke (e.g., bukë e zezë, baguette)</li>
+                <li>Patatet</li>
+                <li>Kuinoa</li>
+                <li>Tërshëra</li>
+                <li>Drithërat (e.g., kornfleks, bollgur)</li>
+                <li>Fasulet (e.g., fasulet e zeza, fasula nyje)</li>
+                <li>Thjerrëzat</li>
+                <li>Patate e ëmbël</li>
+                <li>Elbi</li>
+                <li>Meli</li>
+                <li>Frutat (e.g, Banane, mollë)</li>
               </ul>
             </div>
           </div>
@@ -682,11 +683,11 @@ export default async function ProgramPage({
           {/* Fats */}
           <div className="flex flex-col gap-5 w-full h-full">
             <h3 className="text-xl font-semibold">
-              Daily Fats Requirement
+             Kërkesat ditore për yndyrna
             </h3>
             <div className="text-3xl font-semibold text-emerald-500">
               {calory_data.fats_1}
-              g to
+              g deri
               {' '}
               {calory_data.fats_2}
               g
@@ -695,20 +696,20 @@ export default async function ProgramPage({
               {data.overview.fitness_goal === 'build_muscle' && 'You need to take from 20% to 25% fats of total calories'}
             </p>
             <div className="flex flex-col gap-1">
-              <div className="font-semibold">Sources:</div>
+              <div className="font-semibold">Burimet:</div>
               <ul className="list-disc">
-                <li>Avocado</li>
-                <li>Olive oil</li>
-                <li>Coconut oil</li>
-                <li>Fatty fish (e.g., salmon, mackerel)</li>
-                <li>Nuts (e.g., almonds, walnuts)</li>
-                <li>Seeds (e.g., chia seeds, flaxseeds)</li>
-                <li>Nut butters (e.g., almond butter, peanut butter)</li>
-                <li>Dark chocolate (with high cocoa content)</li>
-                <li>Full-fat yogurt</li>
-                <li>Cheese (in moderation)</li>
-                <li>Eggs (contain healthy fats in the yolk)</li>
-                <li>Olives</li>
+                <li>Avokado</li>
+                <li>Vaj ulliri</li>
+                <li>Vaj kokosi</li>
+                <li>Peshku i yndyrshëm(e.g., salmon, skumbri)</li>
+                <li>Arrat (e.g., bajamet, arra)</li>
+                <li>Farat (e.g., farat chia, fara liri)</li>
+                <li>Gjalpë arrash (e.g., gjalpë bajamesh, gjalp kikiriku)</li>
+                <li>Çokollate e zezë (me përmbajtje të lartë kakao)</li>
+                <li>Jogurt me yndyrë të plotë</li>
+                <li>Djathë (në masë)</li>
+                <li>Vezë (përmbajnë yndyrna të shëndetshme në të verdhën e verdhë)</li>
+                <li>Ullinj</li>
               </ul>
             </div>
           </div>
