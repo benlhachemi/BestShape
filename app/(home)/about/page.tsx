@@ -7,10 +7,12 @@ export default function AboutPage() {
             💪 Programi i stërvitjes
           </h2>
           <p>
-            Programet tona të stërvitjes janë krijuar për t&apos;ju ndihmuar të arrini qëllimet tuaja 
-            të fitnesit shpejt dhe lehtë. Qoftë për të ndërtuar muskuj, për të rritur qëndrueshmërinë 
-            ose për të përmirësuar fitnesin tuaj të përgjithshëm, stërvitjet tona të larmishme ju 
-            ofrojnë një regjim ushtrimesh të personalizuar që i përshtatet nevojave dhe orarit tuaj.
+            Programet tona të stërvitjes janë krijuar për t&apos;ju ndihmuar
+            të arrini qëllimet tuaja të fitnesit shpejt dhe lehtë. Qoftë për
+            të ndërtuar muskuj, për të rritur qëndrueshmërinë ose për të
+            përmirësuar fitnesin tuaj të përgjithshëm, stërvitjet tona të larmishme
+            ju ofrojnë një regjim ushtrimesh të personalizuar që i përshtatet
+            nevojave dhe orarit tuaj.
           </p>
         </div>
 
