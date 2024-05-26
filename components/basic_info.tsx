@@ -210,7 +210,7 @@ export default function BasicInfoCard({
                   className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <span className="text-3xl">💪🏋️‍♂️🔥</span>
-                  Ekstremisht i Hollë
+                  Tepër i hollë
                   <span className="text-neutral-400 text-sm text-center font-normal">
                     1% - 5% yndyrë trupore
                   </span>
