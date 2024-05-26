@@ -7,7 +7,10 @@ export default function AboutPage() {
             💪 Programi i stërvitjes
           </h2>
           <p>
-            Programet tona të stërvitjes janë krijuar për t'ju ndihmuar të arrini qëllimet tuaja të fitnesit shpejt dhe lehtë. Qoftë për të ndërtuar muskuj, për të rritur qëndrueshmërinë ose për të përmirësuar fitnesin tuaj të përgjithshëm, stërvitjet tona të larmishme ju ofrojnë një regjim ushtrimesh të personalizuar që i përshtatet nevojave dhe orarit tuaj.
+            Programet tona të stërvitjes janë krijuar për t'ju ndihmuar të arrini qëllimet tuaja 
+            të fitnesit shpejt dhe lehtë. Qoftë për të ndërtuar muskuj, për të rritur qëndrueshmërinë 
+            ose për të përmirësuar fitnesin tuaj të përgjithshëm, stërvitjet tona të larmishme ju 
+            ofrojnë një regjim ushtrimesh të personalizuar që i përshtatet nevojave dhe orarit tuaj.
           </p>
         </div>
 
@@ -16,7 +19,10 @@ export default function AboutPage() {
             🥗 Programi i dietës
           </h2>
           <p>
-            Arrini rezultate optimale me programet tona të personalizuara të dietës që plotësojnë stërvitjen tuaj. Ekspertët tanë të ushqimit kanë krijuar plane dietike për preferenca dhe qëllime të ndryshme fitnesi, duke ju ndihmuar të qëndroni në rrugën e duhur për shëndetin dhe mirëqenien tuaj.
+            Arrini rezultate optimale me programet tona të personalizuara të dietës që plotësojnë 
+            stërvitjen tuaj. Ekspertët tanë të ushqimit kanë krijuar plane dietike për preferenca 
+            dhe qëllime të ndryshme fitnesi, duke ju ndihmuar të qëndroni në rrugën e duhur për 
+            shëndetin dhe mirëqenien tuaj.
           </p>
         </div>
 
@@ -25,7 +31,11 @@ export default function AboutPage() {
             📊 Analiza e peshës
           </h2>
           <p>
-            Mbani veten në dijeni për përparimin tuaj me analizat tona të peshës të avancuara. Përballoni ndryshimet në peshë, vendosni qëllime të arritshme, dhe ndiqni udhëtimin tuaj të humbjes së peshës ose fitimit të muskujve. Analizat tona të detajuara ju ofrojnë informacion të rëndësishëm për të bërë vendime të informuara dhe përshtatje në programin tuaj të fitnesit.
+            Mbani veten në dijeni për përparimin tuaj me analizat tona të peshës të avancuara. 
+            Përballoni ndryshimet në peshë, vendosni qëllime të arritshme, dhe ndiqni udhëtimin 
+            tuaj të humbjes së peshës ose fitimit të muskujve. Analizat tona të detajuara ju 
+            ofrojnë informacion të rëndësishëm për të bërë vendime të informuara dhe përshtatje 
+            në programin tuaj të fitnesit.
           </p>
         </div>
 
@@ -34,7 +44,10 @@ export default function AboutPage() {
             🏋️‍♀️ Analiza e trupit
           </h2>
           <p>
-            Kuptoni trupin tuaj më mirë me analizat tona të detajuara të kompozitës së trupit. Ndjekni ndryshimet në masën e muskujve, përqindjen e yndyrës në trup dhe kompozitën e përgjithshme të trupit për të kuptuar progresin tuaj fizik. Analizat tona ju ndihmojnë të bëni zgjedhje të informuara dhe përshtatje për të përmirësuar rutinën tuaj të fitnesit.
+            Kuptoni trupin tuaj më mirë me analizat tona të detajuara të kompozitës së trupit. 
+            Ndjekni ndryshimet në masën e muskujve, përqindjen e yndyrës në trup dhe kompozitën 
+            e përgjithshme të trupit për të kuptuar progresin tuaj fizik. Analizat tona ju ndihmojnë 
+            të bëni zgjedhje të informuara dhe përshtatje për të përmirësuar rutinën tuaj të fitnesit.
           </p>
         </div>
       </div>
