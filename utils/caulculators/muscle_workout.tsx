@@ -238,7 +238,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
         <div className="flex flex-col gap-3">
           <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
           <span className="text-neutral-400 text-sm font-normal">
-            Tailored Workout Program for You (2 days workout as you requested)
+            Programi i stërvitjes i përshtatur për ju (2 ditë stërvitje siç kërkuat)
           </span>
         </div>
 
@@ -249,7 +249,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
             <div key={day.workout_type} className="flex flex-col gap-6">
               {/* day */}
               <h3 className="text-xl font-semibold">
-                Day
+                Dita
                 {' '}
                 {i + 1}
                 {' '}
@@ -286,7 +286,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
                             className="flex gap-1 items-center text-sm text-sky-500 hover:underline underline-offset-4"
                             href={`https://www.youtube.com/results?search_query=${exercice.name}`}
                           >
-                            <span>Watch Videos</span>
+                            <span>Shiko Video</span>
                             <span className="text-red-500 text-xl">
                               <AiFillYoutube />
                             </span>
@@ -296,7 +296,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
                             className="flex gap-1 items-center text-sm text-sky-500 hover:underline underline-offset-4"
                             href={`https://www.google.com/search?q=${exercice.name}&tbm=isch`}
                           >
-                            <span>See Images</span>
+                            <span>Shiko Foto</span>
                             <span className="text-xl">
                               <FcGoogle />
                             </span>
@@ -323,7 +323,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
         <div className="flex flex-col gap-3">
           <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
           <span className="text-neutral-400 text-sm font-normal">
-            Tailored Workout Program for You (3 days workout as you requested)
+          Programi i stërvitjes i përshtatur për ju (3 ditë stërvitje siç kërkuat)
           </span>
         </div>
 
@@ -334,7 +334,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
             <div key={day.workout_type} className="flex flex-col gap-6">
               {/* day */}
               <h3 className="text-xl font-semibold">
-                Day
+                Dita
                 {' '}
                 {i + 1}
                 {' '}
@@ -371,7 +371,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
                             className="flex gap-1 items-center text-sm text-sky-500 hover:underline underline-offset-4"
                             href={`https://www.youtube.com/results?search_query=${exercice.name}`}
                           >
-                            <span>Watch Videos</span>
+                            <span>Shiko Video</span>
                             <span className="text-red-500 text-xl">
                               <AiFillYoutube />
                             </span>
@@ -381,7 +381,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
                             className="flex gap-1 items-center text-sm text-sky-500 hover:underline underline-offset-4"
                             href={`https://www.google.com/search?q=${exercice.name}&tbm=isch`}
                           >
-                            <span>See Images</span>
+                            <span>Shiko Foto</span>
                             <span className="text-xl">
                               <FcGoogle />
                             </span>
@@ -408,7 +408,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
         <div className="flex flex-col gap-3">
           <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
           <span className="text-neutral-400 text-sm font-normal">
-            Tailored Workout Program for You (4 days workout as you requested)
+          Programi i stërvitjes i përshtatur për ju (4 ditë stërvitje siç kërkuat)
           </span>
         </div>
 
@@ -419,7 +419,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
             <div key={day.workout_type} className="flex flex-col gap-6">
               {/* day */}
               <h3 className="text-xl font-semibold">
-                Day
+                Dita
                 {' '}
                 {i + 1}
                 {' '}
@@ -456,7 +456,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
                             className="flex gap-1 items-center text-sm text-sky-500 hover:underline underline-offset-4"
                             href={`https://www.youtube.com/results?search_query=${exercice.name}`}
                           >
-                            <span>Watch Videos</span>
+                            <span>Shiko Video</span>
                             <span className="text-red-500 text-xl">
                               <AiFillYoutube />
                             </span>
@@ -466,7 +466,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
                             className="flex gap-1 items-center text-sm text-sky-500 hover:underline underline-offset-4"
                             href={`https://www.google.com/search?q=${exercice.name}&tbm=isch`}
                           >
-                            <span>See Images</span>
+                            <span>Shiko Foto</span>
                             <span className="text-xl">
                               <FcGoogle />
                             </span>
@@ -493,7 +493,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
         <div className="flex flex-col gap-3">
           <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
           <span className="text-neutral-400 text-sm font-normal">
-            Tailored Workout Program for You (5 days workout as you requested)
+            Programi i stërvitjes i përshtatur për ju (5 ditë stërvitje siç kërkuat)
           </span>
         </div>
 
@@ -504,7 +504,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
             <div key={day.workout_type} className="flex flex-col gap-6">
               {/* day */}
               <h3 className="text-xl font-semibold">
-                Day
+                Dita
                 {' '}
                 {i + 1}
                 {' '}
@@ -541,7 +541,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
                             className="flex gap-1 items-center text-sm text-sky-500 hover:underline underline-offset-4"
                             href={`https://www.youtube.com/results?search_query=${exercice.name}`}
                           >
-                            <span>Watch Videos</span>
+                            <span>Shiko Video</span>
                             <span className="text-red-500 text-xl">
                               <AiFillYoutube />
                             </span>
@@ -551,7 +551,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
                             className="flex gap-1 items-center text-sm text-sky-500 hover:underline underline-offset-4"
                             href={`https://www.google.com/search?q=${exercice.name}&tbm=isch`}
                           >
-                            <span>See Images</span>
+                            <span>Shiko Foto</span>
                             <span className="text-xl">
                               <FcGoogle />
                             </span>
@@ -577,7 +577,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
       <div className="flex flex-col gap-3">
         <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
         <span className="text-neutral-400 text-sm font-normal">
-          Tailored Workout Program for You
+        Programi i stërvitjes i përshtatur për ju 
         </span>
       </div>
 
@@ -588,7 +588,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
           <div key={day.workout_type} className="flex flex-col gap-6">
             {/* day */}
             <h3 className="text-xl font-semibold">
-              Day
+              Dita
               {' '}
               {i + 1}
               {' '}
@@ -625,7 +625,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
                           className="flex gap-1 items-center text-sm text-sky-500 hover:underline underline-offset-4"
                           href={`https://www.youtube.com/results?search_query=${exercice.name}`}
                         >
-                          <span>Watch Videos</span>
+                          <span>Shiko Video</span>
                           <span className="text-red-500 text-xl">
                             <AiFillYoutube />
                           </span>
@@ -635,7 +635,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
                           className="flex gap-1 items-center text-sm text-sky-500 hover:underline underline-offset-4"
                           href={`https://www.google.com/search?q=${exercice.name}&tbm=isch`}
                         >
-                          <span>See Images</span>
+                          <span>Shiko Foto</span>
                           <span className="text-xl">
                             <FcGoogle />
                           </span>

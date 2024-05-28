@@ -4,7 +4,7 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
     return (
       <div className="flex flex-col gap-6">
         <h3 className="text-xl font-semibold">
-          Factors for Improved Cardiovascular Health
+          Faktorët për përmirësimin e shëndetit kardiovaskular
         </h3>
 
         {/* chart */}
@@ -18,7 +18,7 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
               <div className="border-t border-x h-4 border-neutral-200" />
             </div>
             <div className="bg-orange-400 text-sm lg:text-xl font-semibold text-neutral-50 flex items-center justify-center rounded-l-md shadow-md">
-              Physical Activity
+              Aktiviteti fizik
             </div>
           </div>
 
@@ -31,7 +31,7 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
               <div className="border-t border-x h-4 border-neutral-200" />
             </div>
             <div className="bg-emerald-400 text-sm lg:text-xl font-semibold text-neutral-50 flex items-center justify-center shadow-md">
-              Diet
+             Dieta
             </div>
           </div>
 
@@ -44,7 +44,7 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
               <div className="border-t border-x h-4 border-neutral-200" />
             </div>
             <div className="bg-sky-400 text-sm lg:text-xl font-semibold text-neutral-50 flex items-center justify-center shadow-md">
-              Rest
+              Pushimi
             </div>
           </div>
 
@@ -71,16 +71,16 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-medium">
-                Physical activities - 40%
+                Aktiviteti Fizik - 40%
               </h3>
               <p>
-                Regular exercise is pivotal for cardiovascular health.
-                It helps strengthen the heart muscle, improves circulation,
-                and enhances the efficiency of oxygen utilization.
-                Cardiovascular exercises like brisk walking,
-                running, swimming, or cycling elevate the heart rate, promoting heart health
-                and reducing the risk of heart disease. It also aids in maintaining healthy
-                blood pressure levels and cholesterol profiles.
+                Ushtrimet e rregullta janë thelbësore për shëndetin kardiovaskular.
+                 Ndihmon në forcimin e muskujve të zemrës, përmirëson qarkullimin,
+                 dhe rrit efikasitetin e përdorimit të oksigjenit.
+                 Ushtrime kardiovaskulare si ecja e shpejtë,
+                 vrapimi, noti ose çiklizmi rrisin rrahjet e zemrës, duke promovuar shëndetin e zemrës
+                 dhe reduktimin e rrezikut të sëmundjeve të zemrës. Gjithashtu ndihmon në ruajtjen e shëndetit
+                 Nivelet e presionit të gjakut dhe profilet e kolesterolit.
               </p>
             </div>
           </div>
@@ -93,13 +93,12 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-medium">Diet - 30%</h3>
               <p>
-                A well-balanced diet plays a crucial role in maintaining cardiovascular health.
-                Emphasize a diet rich in fruits, vegetables, whole grains, and lean
-                proteins. Reduce intake of saturated fats, trans fats, and sodium
-                to manage cholesterol levels and blood pressure. Incorporate foods rich
-                in omega-3 fatty acids, like fatty fish, to help reduce the risk of heart disease.
-                Limiting processed foods and sugary beverages is also essential
-                for maintaining a healthy heart.
+                 Një dietë e ekuilibruar mirë luan një rol vendimtar në ruajtjen e shëndetit kardiovaskular.
+                 Theksoni një dietë të pasur me fruta, perime, drithëra dhe proteina pa yndyrë. Reduktoni marrjen e yndyrave të ngopura, yndyrave trans dhe natriumit
+                 për të menaxhuar nivelet e kolesterolit dhe presionin e gjakut. Përfshini ushqime të pasura
+                 në acidet yndyrore omega-3, si peshku yndyror, për të ndihmuar në uljen e rrezikut të sëmundjeve të zemrës.
+                 Kufizimi i ushqimeve të përpunuara dhe pijeve me sheqer është gjithashtu thelbësor
+                 për të mbajtur një zemër të shëndetshme.
               </p>
             </div>
           </div>
@@ -112,11 +111,11 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-medium">Stress - 15%</h3>
               <p>
-                Chronic stress can have detrimental effects on the cardiovascular
-                system. Implement stress-reduction techniques such as mindfulness,
-                meditation, yoga, or deep breathing exercises. Adequate stress
-                management helps in maintaining healthy blood pressure levels
-                and reducing the risk of heart-related ailments.
+              Stresi kronik mund të ketë efekte të dëmshme në sistemin kardiovaskular.
+              Zbatoni teknika për uljen e stresit si ndërgjegjësimi, meditimi,
+               yoga ose ushtrimet e frymëmarrjes së thellë. Menaxhimi i duhur 
+               i stresit ndihmon në mbajtjen e niveleve të shëndetshme të tensionit 
+               të gjakut dhe reduktimin e rrezikut të sëmundjeve të zemrës.
               </p>
             </div>
           </div>
@@ -129,12 +128,13 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-medium">Bad Habits - 15%</h3>
               <p>
-                Steering clear of harmful habits such as smoking and excessive alcohol
-                consumption is vital for cardiovascular health. Smoking damages the
-                blood vessels, leading to atherosclerosis and increasing the
-                risk of heart disease. Excessive alcohol consumption can elevate blood
-                pressure and contribute to heart muscle damage. Avoiding these habits
-                significantly reduces the risk of cardiovascular complications.
+              Shmangia e zakoneve të dëmshme siç janë pirja e duhanit dhe 
+              konsumimi i tepruar i alkoolit është jetike për shëndetin 
+              kardiovaskular. Pirja e duhanit dëmton enët e gjakut, duke 
+              çuar në arteriosklerozë dhe duke rritur rrezikun e sëmundjeve 
+              të zemrës. Konsumimi i tepruar i alkoolit mund të rrisë tensionin 
+              e gjakut dhe të kontribuojë në dëmtimin e muskujve të zemrës. 
+              Shmangia e këtyre zakoneve ul ndjeshëm rrezikun e komplikimeve kardiovaskulare.
               </p>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
     return (
       <div className="flex flex-col gap-6">
         <h3 className="text-xl font-semibold">
-          Factors for Building Muscles
+        Faktorët për Ndërtimin e Muskujve
         </h3>
 
         {/* chart */}
@@ -162,7 +162,7 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
               <div className="border-t border-x h-4 border-neutral-200" />
             </div>
             <div className="bg-orange-400 text-sm lg:text-xl font-semibold text-neutral-50 flex items-center justify-center rounded-l-md shadow-md">
-              Overload
+              Ngarkesë progresive
             </div>
           </div>
 
@@ -175,7 +175,7 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
               <div className="border-t border-x h-4 border-neutral-200" />
             </div>
             <div className="bg-emerald-400 text-sm lg:text-xl font-semibold text-neutral-50 flex items-center justify-center shadow-md">
-              Nutrition
+              Ushqyerja
             </div>
           </div>
 
@@ -188,7 +188,7 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
               <div className="border-t border-x h-4 border-neutral-200" />
             </div>
             <div className="bg-sky-400 text-sm lg:text-xl font-semibold text-neutral-50 flex items-center justify-center shadow-md">
-              Rest
+              Pushimi
             </div>
           </div>
 
@@ -201,7 +201,7 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
               <div className="border-t border-x h-4 border-neutral-200" />
             </div>
             <div className="bg-yellow-400 text-sm lg:text-xl font-semibold text-neutral-50 flex items-center justify-center shadow-md rounded-r-md">
-              Plan
+              Plani
             </div>
           </div>
         </div>
@@ -215,20 +215,19 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-medium">
-                Progressive Overload - 40%
+                Ngarkesë progresive - 40%
               </h3>
               <p className="text-md text-neutral-500">
-                Progressive overload is the most critical factor in muscle growth.
-                It involves gradually increasing the stress placed on the muscle during exercise
-                over time. This can be achieved by increasing the weight lifted,
-                the number of repetitions,
-                or the intensity of the workout. By consistently challenging your muscles,
-                you stimulate muscle fibers to grow in size and strength.
-                If you keep doing the same routine over and over again,
-                your body is going to plateau!
-                Your body adapts and that is why variety is important.
-                So mix it up and adapt your workout to focus on different
-                muscles keeping your body surprised and confused!
+              Ngarkesa progresive është faktori më i rëndësishëm për rritjen e muskujve. 
+              Ajo përfshin rritjen graduale të stresit të vendosur mbi muskujt gjatë 
+              ushtrimeve me kalimin e kohës. Kjo mund të arrihet duke rritur peshën 
+              që ngrini, numrin e përsëritjeve ose intensitetin e stërvitjes. Duke 
+              sfiduar vazhdimisht muskujt tuaj, stimuloni fibrat muskulore të rriten 
+              në madhësi dhe forcë. Nëse vazhdoni të bëni të njëjtën rutinë pa ndryshime, 
+              trupi juaj do të arrijë një pikë të qëndrueshme! Trupi juaj përshtatet, 
+              prandaj është e rëndësishme të keni larmi. Ndryshoni rutinën dhe përshtatni 
+              stërvitjen tuaj për të fokusuar muskujt e ndryshëm, duke mbajtur trupin 
+              tuaj të befasuar dhe të papërgatitur!
               </p>
             </div>
           </div>
@@ -260,12 +259,14 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-medium">Rest - 15%</h3>
               <p className="text-md text-neutral-500">
-                Muscle growth occurs during periods of rest, not while you&apos;re working out.
-                Sufficient rest is crucial to allow your muscles to recover
-                and repair. Overtraining can lead to muscle fatigue, injuries,
-                and hindered progress. Aim for 7-9 hours of quality sleep each
-                night, and consider incorporating rest days into your workout
-                routine to prevent overexertion and promote muscle repair.
+              Një dietë e mirëbalancuar dhe e përshtatshme është thelbësore 
+              për rritjen e muskujve. Ajo duhet të përfshijë një sasi të 
+              mjaftueshme të proteinave për të mbështetur riparimin dhe rritjen 
+              e muskujve, karbohidrate komplekse për të siguruar energji, 
+              yndyrna të shëndetshme për rregullimin e hormoneve, dhe një 
+              shumëllojshmëri vitaminash dhe mineralesh për shëndetin e përgjithshëm. 
+              Proteinat janë veçanërisht të rëndësishme, pasi ato sigurojnë blloqet 
+              ndërtuese (aminoacidet) të nevojshme për riparimin dhe rritjen e muskujve.
               </p>
             </div>
           </div>
@@ -278,12 +279,13 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-medium">Consistency - 15%</h3>
               <p className="text-md text-neutral-500">
-                Consistency in your workout routine and discipline in adhering to your
-                nutrition plan are key to achieving significant muscle growth.
-                Building muscle is a gradual process that requires dedication
-                and perseverance. Regular exercise and a consistent diet will
-                ensure that your body receives the necessary stimuli for
-                muscle growth and repair.
+              Konsistenca në rutinën tuaj të stërvitjes dhe disiplina në 
+              përmbajtjen e planit tuaj të ushqimit janë çelësi për të 
+              arritur rritje muskulore të konsiderueshme. Ndërtimi i 
+              muskujve është një proces i gradual që kërkon dedikim dhe 
+              vullnet. Ushtrimet e rregullta dhe një dietë e qëndrueshme 
+              do të sigurojnë që trupi juaj të marrë stimujt e nevojshëm 
+              për rritjen dhe riparimin e muskujve.
               </p>
             </div>
           </div>
