@@ -240,13 +240,15 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-medium">Nutrition - 30%</h3>
               <p className="text-md text-neutral-500">
-                A well-balanced and appropriate diet is essential for muscle growth.
-                It should include an adequate amount of protein to support
-                muscle repair and growth, complex carbohydrates to provide
-                energy, healthy fats for hormone regulation, and a variety of
-                vitamins and minerals for overall health. Protein is particularly
-                crucial, as it provides the building blocks (amino acids)
-                necessary for muscle repair and growth.
+              Një dietë e mirëbalancuar dhe e përshtatshme është thelbësore 
+              për rritjen e muskujve. Ajo duhet të përfshijë një sasi të 
+              mjaftueshme të proteinave për të mbështetur riparimin dhe 
+              rritjen e muskujve, karbohidrate komplekse për të siguruar 
+              energji, yndyrna të shëndetshme për rregullimin e hormoneve, 
+              dhe një shumëllojshmëri vitaminash dhe mineralesh për shëndetin 
+              e përgjithshëm. Proteinat janë veçanërisht të rëndësishme, 
+              pasi ato sigurojnë blloqet ndërtuese (aminoacidet) të nevojshme 
+              për riparimin dhe rritjen e muskujve.
               </p>
             </div>
           </div>
