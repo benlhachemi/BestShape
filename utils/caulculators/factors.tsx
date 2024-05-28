@@ -238,7 +238,7 @@ export default function getFactors({ fitness_goal }: { fitness_goal: string }): 
               <div className="h-full w-0.5 bg-gradient-to-b from-emerald-300 mx-auto" />
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-lg font-medium">Nutrition - 30%</h3>
+              <h3 className="text-lg font-medium">Ushqimi - 30%</h3>
               <p className="text-md text-neutral-500">
               Një dietë e mirëbalancuar dhe e përshtatshme është thelbësore 
               për rritjen e muskujve. Ajo duhet të përfshijë një sasi të 
