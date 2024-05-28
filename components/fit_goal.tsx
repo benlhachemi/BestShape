@@ -63,7 +63,7 @@ export default function FitGoal({
               Djeg yndyrnat
               <Lottie loop animationData={fireAnimation} className="w-14" />
               <span className="text-neutral-400 text-sm text-center font-normal">
-                Të djegin yndyrnat dhe të humbin peshë
+                Djeg yndyrat dhe humb peshë.
               </span>
             </Label>
           </div>
@@ -82,7 +82,7 @@ export default function FitGoal({
               Shëndeti kardiovaskular
               <Lottie loop animationData={healthAnimation} className="w-14" />
               <span className="text-neutral-400 text-sm text-center font-normal">
-                Shëndeti më i mirë i zemrës dhe enëve të gjakut
+                Shëndet më i mirë i zemrës dhe enëve të gjakut
               </span>
             </Label>
           </div>
@@ -101,7 +101,7 @@ export default function FitGoal({
               Ndërtoni muskuj
               <Lottie loop animationData={strongAnimation} className="w-14" />
               <span className="text-neutral-400 text-sm text-center font-normal">
-                Digjni yndyrnat dhe fitoni muskuj
+                Djeg yndyrnat dhe fito muskuj
               </span>
             </Label>
           </div>
