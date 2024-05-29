@@ -82,7 +82,7 @@ export default function StepBar({
           variant="secondary"
           className="lg:w-32 xl:w-40 2xl:w-44 lg:py-6 xl:py-7 2xl:py-8 text-lg xl:text-xl"
         >
-          👈 Previous
+          👈 Kthehu
         </Button>
       )}
       <Road data={road} />
@@ -107,7 +107,7 @@ export default function StepBar({
             is_blocked ? '' : 'animate__pulse'
           } animate__infinite`}
         >
-          Next 👉
+          Tjetra 👉
         </Button>
       )}
       {is_generate_btn && (
@@ -115,7 +115,7 @@ export default function StepBar({
           onClick={generateProgram}
           className="lg:w-32 xl:w-40 2xl:w-44 lg:py-6 xl:py-7 2xl:py-8 text-lg xl:text-xl"
         >
-          Let&apos;s Go 🚀
+          Përfundo 🚀
         </Button>
       )}
     </div>
