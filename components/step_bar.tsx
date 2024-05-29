@@ -107,7 +107,7 @@ export default function StepBar({
             is_blocked ? '' : 'animate__pulse'
           } animate__infinite`}
         >
-          Tjetra 👉
+          Vazhdo 👉
         </Button>
       )}
       {is_generate_btn && (

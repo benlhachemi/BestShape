@@ -40,7 +40,7 @@ export default function CopyLink({ params }: { params: any }) {
           <div className="relative">
             <Button onClick={copy} className="w-32">Kopjo</Button>
             {is_copied && (
-              <div className="text-md text-neutral-400 absolute top-0 lg:-top-3/4 lg:animate__animated lg:animate__fadeInUp left-full lg:left-2/4 w-full translate-x-5 lg:translate-x-0">Copied👍</div>
+              <div className="text-md text-neutral-400 absolute top-0 lg:-top-3/4 lg:animate__animated lg:animate__fadeInUp left-full lg:left-2/4 w-full translate-x-5 lg:translate-x-0">👍</div>
             )}
           </div>
         </div>
