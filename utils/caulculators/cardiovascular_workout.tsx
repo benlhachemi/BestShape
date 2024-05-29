@@ -61,7 +61,7 @@ export default function CardiovascularWorkout({
       <div className="flex flex-col gap-20">
         {/* Header */}
         <div className="flex flex-col gap-3">
-          <h2 className="font-bold text-4xl flex-shrink-0">Workout Plan</h2>
+          <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
           <span className="text-neutral-400 text-sm font-normal">
             Tailored Workout Program for You (2 days workout as you requested)
           </span>
@@ -73,7 +73,7 @@ export default function CardiovascularWorkout({
             <div key={day.workout_type} className="flex flex-col gap-6">
               {/* day */}
               <h3 className="text-xl font-semibold">
-                Day {i + 1} - {day.workout_type}
+                Dita {i + 1} - {day.workout_type}
               </h3>
 
               {/* exercices */}
@@ -140,7 +140,7 @@ export default function CardiovascularWorkout({
     <div className="flex flex-col gap-20">
       {/* Header */}
       <div className="flex flex-col gap-3">
-        <h2 className="font-bold text-4xl flex-shrink-0">Workout Plan</h2>
+        <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
         <span className="text-neutral-400 text-sm font-normal">
           Tailored Workout Program for You
         </span>
@@ -152,7 +152,7 @@ export default function CardiovascularWorkout({
           <div key={day.workout_type} className="flex flex-col gap-6">
             {/* day */}
             <h3 className="text-xl font-semibold">
-              Day {i + 1} - {day.workout_type}
+              Dita {i + 1} - {day.workout_type}
             </h3>
 
             {/* exercices */}

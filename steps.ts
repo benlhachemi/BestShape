@@ -5,8 +5,8 @@ const steps_list: stepType[] = [
   {
     id: 'BasicInfoCard',
     icon: '📝',
-    title: 'Personal Informations 📝',
-    description: 'We need some basic informations from you to start',
+    title: 'Të dhënat personale 📝',
+    description: 'Për të filluar, na duhen disa informacione bazë nga ju',
     component: null,
     answers: {
       name: '',
@@ -24,8 +24,8 @@ const steps_list: stepType[] = [
   {
     id: 'FitGoal',
     icon: '🏃',
-    title: 'Fitness Goal 🏃',
-    description: 'What do you want to achieve in your new fitness journey',
+    title: 'Objektivi i fitnesit 🏃',
+    description: 'Çfarë doni të arrini në udhëtimin tuaj të ri të fitnesit',
     component: null,
     answers: {
       fitness_goal: 'burn_fats',

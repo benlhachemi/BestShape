@@ -41,7 +41,7 @@ export default function FitGoal({
       {/* Fitness goal */}
       <div className="flex flex-col space-y-3">
         <Label htmlFor="name" className="text-md lg:text-lg">
-          Choose your fitness goal 🎯
+          Zgjidhni qëllimin tuaj të fitnesit 🎯
         </Label>
 
         <RadioGroup
@@ -60,10 +60,10 @@ export default function FitGoal({
               htmlFor="burn_fats"
               className="flex cursor-pointer gap-2 h-full text-2xl lg:text-3xl font-black text-center flex-col items-center justify-center rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
             >
-              Burn Fats
+              Djeg yndyrnat
               <Lottie loop animationData={fireAnimation} className="w-14" />
               <span className="text-neutral-400 text-sm text-center font-normal">
-                Burn fats and lose weight
+                Të djegin yndyrnat dhe të humbin peshë
               </span>
             </Label>
           </div>
@@ -79,10 +79,10 @@ export default function FitGoal({
               htmlFor="cardiovascular"
               className="flex cursor-pointer gap-2 h-full text-2xl lg:text-3xl font-black text-center flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
             >
-              Cardiovascular health
+              Shëndeti kardiovaskular
               <Lottie loop animationData={healthAnimation} className="w-14" />
               <span className="text-neutral-400 text-sm text-center font-normal">
-                Better heart health and blood vessels
+                Shëndeti më i mirë i zemrës dhe enëve të gjakut
               </span>
             </Label>
           </div>
@@ -98,10 +98,10 @@ export default function FitGoal({
               htmlFor="build_muscle"
               className="flex h-full cursor-pointer gap-2 text-2xl lg:text-3xl font-black text-center flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
             >
-              Build Muscles
+              Ndërtoni muskuj
               <Lottie loop animationData={strongAnimation} className="w-14" />
               <span className="text-neutral-400 text-sm text-center font-normal">
-                Burn fats and gain muscle
+                Digjni yndyrnat dhe fitoni muskuj
               </span>
             </Label>
           </div>
@@ -111,11 +111,11 @@ export default function FitGoal({
 
       {/* days */}
       <div className="flex flex-col space-y-2">
-        <Label htmlFor="age" className="text-md lg:text-lg">How many days a week are you willing to commit to your fitness routine 🗓️ ?</Label>
+        <Label htmlFor="age" className="text-md lg:text-lg">Sa ditë në javë jeni të gatshëm t'i përkushtoheni rutinës së fitnesit?</Label>
         <Picker
           max={7}
           min={2}
-          tag="Days per week"
+          tag="Ditë në javë"
           value={answers.workout_days}
           onAdd={() => setAnswers({ ...answers, workout_days: answers.workout_days + 1 })}
           onRemove={() => {
@@ -127,7 +127,7 @@ export default function FitGoal({
 
       {/* active */}
       <div className="flex flex-col w-full space-y-1.5">
-        <Label htmlFor="gender" className="text-md lg:text-lg">How active are you during the day 🏃‍♂️ ?</Label>
+        <Label htmlFor="gender" className="text-md lg:text-lg">Sa aktiv jeni gjatë ditës?</Label>
         <RadioGroup
           onValueChange={(e) => setAnswers({ ...answers, activity: e })}
           defaultValue={answers.activity}
@@ -141,8 +141,8 @@ export default function FitGoal({
               className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
             >
               <span className="text-3xl">💻</span>
-              No movements at all
-              <span className="text-neutral-400 text-sm text-center font-normal">I spend almost all day on my desk</span>
+              Asnjë lëvizje fare
+              <span className="text-neutral-400 text-sm text-center font-normal">Pothuajse gjithë ditën e kaloj në tavolinën time</span>
             </Label>
           </div>
 
@@ -154,8 +154,8 @@ export default function FitGoal({
               className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
             >
               <span className="text-3xl">🧘‍♂️</span>
-              Few movements
-              <span className="text-neutral-400 text-sm text-center font-normal">I take a break from time to time to do physical movements</span>
+              Pak lëvizje
+              <span className="text-neutral-400 text-sm text-center font-normal">Ndërkohë bëj ushtrime fizike</span>
             </Label>
           </div>
 
@@ -167,8 +167,8 @@ export default function FitGoal({
               className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
             >
               <span className="text-3xl">⚡️</span>
-              Moderately Active
-              <span className="text-neutral-400 text-sm text-center font-normal">I spend an average of 60 minutes a day doing physical activities </span>
+              Mesatarisht aktiv
+              <span className="text-neutral-400 text-sm text-center font-normal">Unë kaloj mesatarisht 60 minuta në ditë duke bërë aktivitete fizike</span>
             </Label>
           </div>
 
@@ -180,8 +180,8 @@ export default function FitGoal({
               className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
             >
               <span className="text-3xl">🔥</span>
-              Very Active
-              <span className="text-neutral-400 text-sm text-center font-normal">I spend a big amount of time doing physical activities</span>
+              Shumë aktiv
+              <span className="text-neutral-400 text-sm text-center font-normal">Kaloj shumë kohë duke bërë aktivitete fizike</span>
             </Label>
           </div>
         </RadioGroup>

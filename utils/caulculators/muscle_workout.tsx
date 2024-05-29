@@ -236,7 +236,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
       <div className="flex flex-col gap-20">
         {/* Header */}
         <div className="flex flex-col gap-3">
-          <h2 className="font-bold text-4xl flex-shrink-0">Workout Plan</h2>
+          <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
           <span className="text-neutral-400 text-sm font-normal">
             Tailored Workout Program for You (2 days workout as you requested)
           </span>
@@ -321,7 +321,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
       <div className="flex flex-col gap-20">
         {/* Header */}
         <div className="flex flex-col gap-3">
-          <h2 className="font-bold text-4xl flex-shrink-0">Workout Plan</h2>
+          <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
           <span className="text-neutral-400 text-sm font-normal">
             Tailored Workout Program for You (3 days workout as you requested)
           </span>
@@ -406,7 +406,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
       <div className="flex flex-col gap-20">
         {/* Header */}
         <div className="flex flex-col gap-3">
-          <h2 className="font-bold text-4xl flex-shrink-0">Workout Plan</h2>
+          <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
           <span className="text-neutral-400 text-sm font-normal">
             Tailored Workout Program for You (4 days workout as you requested)
           </span>
@@ -491,7 +491,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
       <div className="flex flex-col gap-20">
         {/* Header */}
         <div className="flex flex-col gap-3">
-          <h2 className="font-bold text-4xl flex-shrink-0">Workout Plan</h2>
+          <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
           <span className="text-neutral-400 text-sm font-normal">
             Tailored Workout Program for You (5 days workout as you requested)
           </span>
@@ -575,7 +575,7 @@ export default function MuscleWorkout({ workout_days }: { workout_days: number }
     <div className="flex flex-col gap-20">
       {/* Header */}
       <div className="flex flex-col gap-3">
-        <h2 className="font-bold text-4xl flex-shrink-0">Workout Plan</h2>
+        <h2 className="font-bold text-4xl flex-shrink-0">Plani i ushtrimeve</h2>
         <span className="text-neutral-400 text-sm font-normal">
           Tailored Workout Program for You
         </span>

@@ -45,15 +45,15 @@ export default function BasicInfoCard({
         {/* Name */}
         <div className="flex flex-col space-y-3">
           <Label htmlFor="name" className="text-md lg:text-lg">
-            Name
+            Adresa elektronike
             {' '}
-            <span className="text-neutral-500 text-xs lg:text-md">(optional)</span>
+            <span className="text-neutral-500 text-xs lg:text-md">(opsionale)</span>
           </Label>
           <Input
             defaultValue={answers.name}
             onChange={(e) => setAnswers({ ...answers, name: e.target.value })}
             id="name"
-            placeholder="What's your name"
+            placeholder="info@trajneri.com"
             className="py-6 lg:py-7 text-md lg:text-xl"
           />
         </div>
@@ -61,12 +61,12 @@ export default function BasicInfoCard({
         {/* Age */}
         <div className="flex flex-col space-y-3">
           <Label htmlFor="age" className="text-md lg:text-lg">
-            How old are you 🎂 ?
+            Mosha juaj?
           </Label>
           <Picker
             max={99}
-            min={18}
-            tag="years old"
+            min={16}
+            tag="vjeç"
             value={answers.age}
             onAdd={() => setAnswers({ ...answers, age: answers.age + 1 })}
             onRemove={() => setAnswers({ ...answers, age: answers.age - 1 })}
@@ -77,7 +77,7 @@ export default function BasicInfoCard({
         {/* Gender */}
         <div className="flex flex-col w-full space-y-3">
           <Label htmlFor="gender" className="text-md lg:text-lg">
-            Sex
+            Gjinia
           </Label>
           <RadioGroup
             defaultValue={answers.gender}
@@ -92,7 +92,7 @@ export default function BasicInfoCard({
                 className="flex relative h-full text-center text-xl lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary peer-data-[state=checked]:bg-secondary [&:has([data-state=checked])]:border-primary"
               >
                 <span className="text-2xl lg:text-3xl">🧑</span>
-                Male
+                Mashkull
               </Label>
             </div>
 
@@ -108,7 +108,7 @@ export default function BasicInfoCard({
                 className="flex h-full text-center text-xl lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
               >
                 <span className="text-2xl lg:text-3xl">👩</span>
-                Female
+                Femër
               </Label>
             </div>
           </RadioGroup>
@@ -118,7 +118,7 @@ export default function BasicInfoCard({
         <div className="flex flex-col lg:flex-row w-full gap-4 h-full">
           <div className="flex flex-col space-y-2 w-full h-full">
             <Label htmlFor="age" className="text-md lg:text-lg">
-              Height 📏
+              Gjatesia 📏
             </Label>
             <Picker
               max={270}
@@ -139,7 +139,7 @@ export default function BasicInfoCard({
 
           <div className="flex flex-col space-y-2 w-full h-full">
             <Label htmlFor="age" className="text-md lg:text-lg">
-              Weight ⚖️
+              Pesha ⚖️
             </Label>
             <Picker
               max={160}
@@ -160,7 +160,7 @@ export default function BasicInfoCard({
         {/* Measure question */}
         <div className="flex flex-col w-full gap-3">
           <Label htmlFor="name" className="text-md lg:text-lg">
-            Do you have a measuring tape ?
+            Keni një shirit matës?
           </Label>
           <RadioGroup
             defaultValue={answers.is_fat_accurate}
@@ -174,13 +174,13 @@ export default function BasicInfoCard({
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="yes" id="yes" />
               <Label htmlFor="yes" className="text-md">
-                Yes
+                Po
               </Label>
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="no" id="no" />
               <Label htmlFor="no" className="text-md">
-                No
+                Jo
               </Label>
             </div>
           </RadioGroup>
@@ -190,7 +190,7 @@ export default function BasicInfoCard({
         {is_choose && !is_accurate && (
           <div className="flex flex-col w-full space-y-3">
             <Label htmlFor="gender" className="text-md lg:text-lg">
-              What&apos;s your current body fat percentage?
+              Cila është përqindja aktuale e yndyrës në trup?
             </Label>
 
             <RadioGroup
@@ -210,9 +210,9 @@ export default function BasicInfoCard({
                   className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <span className="text-3xl">💪🏋️‍♂️🔥</span>
-                  Ultra Lean
+                  Tepër i hollë
                   <span className="text-neutral-400 text-sm text-center font-normal">
-                    1% - 5% body fat
+                    1% - 5% yndyrë trupore
                   </span>
                 </Label>
               </div>
@@ -229,9 +229,9 @@ export default function BasicInfoCard({
                   className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <span className="text-3xl">🏃‍♂️💨👌</span>
-                  Very Lean
+                  Shumë i dobët
                   <span className="text-neutral-400 text-sm text-center font-normal">
-                    6% - 10% body fat
+                    6% - 10% yndyrë trupore
                   </span>
                 </Label>
               </div>
@@ -248,9 +248,9 @@ export default function BasicInfoCard({
                   className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <span className="text-3xl">🏋️‍♀️🥗💫</span>
-                  Lean
+                  Dobët
                   <span className="text-neutral-400 text-sm text-center font-normal">
-                    11% - 15% body fat
+                    11% - 15% yndyrë trupore
                   </span>
                 </Label>
               </div>
@@ -267,9 +267,9 @@ export default function BasicInfoCard({
                   className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <span className="text-3xl">🚴‍♂️🥦🏋️‍♀️</span>
-                  Moderately Lean
+                  Mesatarisht i dobët
                   <span className="text-neutral-400 text-sm text-center font-normal">
-                    16% - 20% body fat
+                    16% - 20% yndyrë trupore
                   </span>
                 </Label>
               </div>
@@ -286,9 +286,9 @@ export default function BasicInfoCard({
                   className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <span className="text-3xl">🏃‍♀️🍏😊</span>
-                  Healthy
+                  Të shëndetshëm
                   <span className="text-neutral-400 text-sm text-center font-normal">
-                    21% - 25% body fat
+                    21% - 25% yndyrë trupore
                   </span>
                 </Label>
               </div>
@@ -305,9 +305,9 @@ export default function BasicInfoCard({
                   className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <span className="text-3xl">🏋️‍♂️🍔😬</span>
-                  Moderately Overweight
+                  Mbipeshë mesatare
                   <span className="text-neutral-400 text-sm text-center font-normal">
-                    26% - 30% body fat
+                    26% - 30% yndyrë trupore
                   </span>
                 </Label>
               </div>
@@ -324,9 +324,9 @@ export default function BasicInfoCard({
                   className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <span className="text-3xl">🍔🍕😓</span>
-                  Overweight
+                  Mbipeshë
                   <span className="text-neutral-400 text-sm text-center font-normal">
-                    31% - 35% body fat
+                    31% - 35% yndyrë trupore
                   </span>
                 </Label>
               </div>
@@ -343,9 +343,9 @@ export default function BasicInfoCard({
                   className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <span className="text-3xl">🍔🍟😔</span>
-                  Obese
+                  Trashë
                   <span className="text-neutral-400 text-sm text-center font-normal">
-                    36% - 40% body fat
+                    36% - 40% yndyrë trupore
                   </span>
                 </Label>
               </div>
@@ -362,9 +362,9 @@ export default function BasicInfoCard({
                   className="flex h-full text-center text-lg lg:text-2xl gap-2 flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <span className="text-3xl">🍔🍟🆘</span>
-                  Extremly obese
+                  Jashtëzakonisht trashë
                   <span className="text-neutral-400 text-sm text-center font-normal">
-                    41% and above body fat
+                    41% dhe më shumë yndyrë trupore
                   </span>
                 </Label>
               </div>
@@ -376,19 +376,19 @@ export default function BasicInfoCard({
         {is_choose && is_accurate && (
           <div className="flex flex-col w-full gap-3">
             <Label htmlFor="gender" className="text-md lg:text-lg">
-              What&apos;s your current body fat percentage?
+              Cila është përqindja aktuale e yndyrës në trup?
             </Label>
 
             <p className="text-neutral-400 text-sm mb-3">
-              To accurately determine your body fat percentage, we require two
-              measurements: your neck size and waist size. These essential
-              measurements enable us to calculate your body fat percentage.
+              Për të përcaktuar me saktësi përqindjen e yndyrës në trup,
+              ne kemi nevojë për dy matje: madhësinë e qafës dhe madhësinë e belit.
+              Këto matje thelbësore na mundësojnë të llogarisim përqindjen e yndyrës në trup.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 w-full h-full">
               <div className="flex flex-col space-y-2 w-full h-full">
                 <Label htmlFor="age" className="text-md lg:text-lg">
-                  Neck
+                  Qafa
                 </Label>
                 <Picker
                   max={100}
@@ -409,7 +409,7 @@ export default function BasicInfoCard({
 
               <div className="flex flex-col space-y-2 w-full h-full">
                 <Label htmlFor="age" className="text-md lg:text-lg">
-                  Waist
+                  Beli
                 </Label>
                 <Picker
                   max={200}
@@ -432,7 +432,7 @@ export default function BasicInfoCard({
 
                   <div className="flex flex-col space-y-2 w-full h-full">
                     <Label htmlFor="age" className="text-md lg:text-lg">
-                      Hip
+                      Ijë
                     </Label>
                     <Picker
                       max={200}
