@@ -401,9 +401,9 @@ export default async function ProgramPage({
               } Kg për të arritur peshën ideale e sugjeruar (${ideal_weight} kg), `}
             {data.overview.weight === ideal_weight
               && ' mbani peshën tuaj aktuale, '}
-            and for the body composition you should
+            dhe për përbërjen e trupit duhet të digjni 
             {composition.fat_percentage > composition.ideal_fat
-              && ` djegni ${
+              && ` digjni ${
                 composition.fat_percentage - composition.ideal_fat
               } % e yndyrës së trupit për të arritur përbërjen ideale të trupit të sugjeruar (${
                 composition.ideal_fat
