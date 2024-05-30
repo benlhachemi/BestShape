@@ -405,7 +405,7 @@ export default async function ProgramPage({
             {composition.fat_percentage > composition.ideal_fat
               && ` digjni ${
                 composition.fat_percentage - composition.ideal_fat
-              } % e yndyrës së trupit për të arritur përbërjen ideale të trupit të sugjeruar (${
+              } % të yndyrës së trupit për të arritur përbërjen ideale të trupit të sugjeruar (${
                 composition.ideal_fat
               } %).`}
             {composition.fat_percentage <= composition.ideal_fat
