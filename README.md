@@ -1,3 +1,5 @@
+<h3><a style="color:#08b5ff" href="https://x.com/souhail_dev">Follow me on Twitter (X)</a></h3>
+
 ## Full Fitness Program Generator
 
 **✅Next.js 13 app router**
@@ -22,3 +24,5 @@
 ![Program Page](https://i.imgur.com/COQysan.png)
 
 ![Program Page](https://i.imgur.com/FVAxWg0.png)
+
+<h3><a style="color:#08b5ff" href="https://x.com/souhail_dev">Follow me on Twitter (X)</a></h3>
