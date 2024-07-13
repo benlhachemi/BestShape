@@ -401,11 +401,11 @@ export default async function ProgramPage({
               } Kg për të arritur peshën ideale e sugjeruar (${ideal_weight} kg), `}
             {data.overview.weight === ideal_weight
               && ' mbani peshën tuaj aktuale, '}
-            and for the body composition you should
+            dhe për përbërjen e trupit duhet të digjni 
             {composition.fat_percentage > composition.ideal_fat
-              && ` djegni ${
+              && ` digjni ${
                 composition.fat_percentage - composition.ideal_fat
-              } % e yndyrës së trupit për të arritur përbërjen ideale të trupit të sugjeruar (${
+              } % të yndyrës së trupit për të arritur përbërjen ideale të trupit të sugjeruar (${
                 composition.ideal_fat
               } %).`}
             {composition.fat_percentage <= composition.ideal_fat
@@ -623,7 +623,7 @@ export default async function ProgramPage({
               g
             </div>
             <p>
-              {data.overview.fitness_goal === 'build_muscle' && 'Since your goal is to build muscles, high protein intake is an important factor to build lean muscle mass'}
+              {data.overview.fitness_goal === 'build_muscle' && 'Meqenëse qëllimi yt është të ndërtosh muskuj, marrja e lartë e proteinave është një faktor i rëndësishëm për të ndërtuar masën muskulore të pastër.'}
             </p>
             <div className="flex flex-col gap-1">
               <div className="font-semibold">Burimet:</div>
@@ -658,7 +658,8 @@ export default async function ProgramPage({
               g
             </div>
             <p>
-              {data.overview.fitness_goal === 'build_muscle' && 'Carbohydrates are a crucial macronutrient for bodybuilders due to their role in providing energy for intense workouts and aiding in muscle recovery'}
+              {data.overview.fitness_goal === 'build_muscle' && '
+Karbohidratet janë një makronutrient i rëndësishëm për bodybuilderët për shkak të rolit të tyre në furnizimin me energji për stërvitje intensive dhe ndihmën në rikuperimin e muskujve.'}
             </p>
             <div className="flex flex-col gap-1">
               <div className="font-semibold">Burimet:</div>
@@ -693,7 +694,7 @@ export default async function ProgramPage({
               g
             </div>
             <p>
-              {data.overview.fitness_goal === 'build_muscle' && 'You need to take from 20% to 25% fats of total calories'}
+              {data.overview.fitness_goal === 'build_muscle' && 'Duhet të merrni nga 20% deri në 25% yndyra nga totali i kalorive.'}
             </p>
             <div className="flex flex-col gap-1">
               <div className="font-semibold">Burimet:</div>
