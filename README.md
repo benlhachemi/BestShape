@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+
+# BestShape
+
+BestShape is a web-app to generate full fitness programs (diet, workouts, etc...)
+
+
+
+## YouTube Tutorial
+[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi/XZBETa-s_mY/maxresdefault.jpg?v=6536ac55&sqp=CPSxl8gG&rs=AOn4CLAoNkFwRPsceF2EqV1rLGhgkJYoZw)](https://youtu.be/XZBETa-s_mY)
+## Demo
+
+Live demo: [https://best-shape-alpha.vercel.app/](https://best-shape-alpha.vercel.app/)
+
+
+## Screenshots
+
+![App Screenshot](https://i.imgur.com/GZyTfSc.png)
+
+![App Screenshot](https://i.imgur.com/hYZ4gzj.png)
+
+![App Screenshot](https://i.imgur.com/fc1ki3I.png)
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`DATABASE_URL`
+
+
+
+## Installation
+
+Start by cloning this repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/benlhachemi/BestShape.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install dependecies (this project uses yarn as package manager)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+  yarn
+```
 
-## Learn More
+Run on localhost (dev environement)
+```bash
+  yarn dev # http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+To build the project run this command (prisma generate already included in the package.json scripts)
+```bash
+  yarn build # this will run prisma generate && next build
+```   
+## Authors
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Souhail Benlhachemi](https://www.x.com/souhail_dev)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[MIT](https://choosealicense.com/licenses/mit/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
